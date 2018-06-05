@@ -1,0 +1,11 @@
+name: GrapplingHook
+authors: [Vrish]
+version: 1
+main: com.vrish.grapple.main
+description: Grappling Hook for deathsvalentine
+commands:
+  grapple:
+    description: Main command for the grappling hook!
+    aliases: [gh,hook]
+    usage:
+      Use /grapple help for help!

@@ -1,0 +1,46 @@
+package com.vrish.mobs;
+
+import java.util.concurrent.ThreadLocalRandom;
+
+import org.bukkit.Location;
+import org.bukkit.World;
+import org.bukkit.entity.Entity;
+import org.bukkit.entity.EntityType;
+import org.bukkit.entity.Slime;
+import org.bukkit.event.Listener;
+
+public class MobSpawner implements Listener {
+	
+	private main plugin = main.getPlugin(main.class);
+	
+	public void spawnSlime(Location loc) {
+		
+		int giant = plugin.getConfig().getInt("MobBehaviour.Slimes.giant-slime-chance");
+		int chance = ThreadLocalRandom.current().nextInt(1, giant + 1);
+		Location newloc;
+		int rangemin = plugin.getConfig().getInt("MobBehaviour.Slimes.spawn-range-min");
+		int rangemax = plugin.getConfig().getInt("MobBehaviour.Slimes.spawn-range-max");
+		int randx = ThreadLocalRandom.current().nextInt(rangemin, rangemax + 1);
+		int randz = ThreadLocalRandom.current().nextInt(rangemin, rangemax + 1);
+		int newx = loc.getBlockX() + randx;
+		int newz = loc.getBlockX() + randz;
+		int y = loc.getBlockY();
+		World world = loc.getWorld();
+		
+		newloc = new Location(world, newx, y , newz);
+		
+	
+		if (chance == giant) {
+			
+			Slime slime = (Slime) world.spawnEntity(newloc, EntityType.SLIME);
+			slime.setSize(3);
+			
+		}else {
+			
+			
+			
+		}
+		
+	}
+	
+}

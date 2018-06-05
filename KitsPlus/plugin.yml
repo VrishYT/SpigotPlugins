@@ -1,0 +1,30 @@
+ name: KitsPlus
+ version: 1.0
+ description: Kits Plugin with a kit openable.
+ author: Vrish
+ authors: [Vrish] 
+ 
+ main: com.vrish.kitsplus.main
+ 
+ commands:
+   kit:
+     description: Main kit command.
+     aliases: [kits]
+     permission: kitsplus.kit
+   ukit:
+     description: Main admin kit command.
+     aliases: [ukits]
+     permission: kitsplus.admin
+     
+ permissions:
+   kitsplus.*:
+     description: Gives access to all kit commands
+     children:
+       kitsplus.kit: true
+       kitsplus.admin: true
+   kitsplus.kit:
+     description: Allows you to use the /kit command.
+     default: true
+   kitsplus.admin:
+     description: Allows you to use the /ukit command.
+     default: false

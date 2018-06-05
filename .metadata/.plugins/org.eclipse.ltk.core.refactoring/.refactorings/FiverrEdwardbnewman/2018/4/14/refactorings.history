@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;tped&apos; in &apos;com.vrish.mobs.Events.enderTeleport(...)&apos; to &apos;tpEntityType&apos;&#x0D;&#x0A;- Original project: &apos;FiverrEdwardbnewman&apos;&#x0D;&#x0A;- Original element: &apos;com.vrish.mobs.Events.enderTeleport(EntityTeleportEvent).tped&apos;&#x0D;&#x0A;- Renamed element: &apos;tped&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;tped&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.vrish.mobs{Events.java[Events~enderTeleport~QEntityTeleportEvent;@tped!991!1027!1002!1005!QEntityType;!0!false" name="tpEntityType" references="true" stamp="1523044926120" version="1.0"/>
+</session>

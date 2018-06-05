@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inheritJdk="true">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="spigot_1122.jar" scope="COMPILE">
+		<srcroot url="jar://$MODULE_DIR$/../../Edwardbnewman/spigot_1122.jar!/"/>
+	</lib>
+</component>

@@ -1,0 +1,28 @@
+package com.vrish.kits;
+
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+
+public class Commands implements CommandExecutor {
+
+	public static String cmd1 = "kit";
+	public static String cmd2 = "ukit";	
+	
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+
+		if (cmd.getName().equalsIgnoreCase(cmd1)) { 
+			
+			return true;
+			
+		}else if (cmd.getName().equalsIgnoreCase(cmd2)) {
+			
+			return true;
+			
+		}
+		
+		return false;
+	}
+
+}

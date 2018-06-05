@@ -1,0 +1,14 @@
+ name: MobBehviour
+ version: 1
+ description: This plugin will alter some Mob Behaviour
+ author: Vrish
+ authors: [Vrish] 
+ 
+ main: com.vrish.mobs.main
+ 
+ commands:
+   slime:
+     description: Main prefix for the slime command.
+     aliases: [mobslime]
+     permission: mobs.slime
+     usage: Syntax error! Simply type /&lt;command&gt; to use the command.

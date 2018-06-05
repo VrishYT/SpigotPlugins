@@ -1,0 +1,54 @@
+package com.vrish.mobs;
+
+import org.bukkit.entity.EntityType;
+import org.bukkit.event.Listener;
+import org.bukkit.plugin.Plugin;
+
+import net.minecraft.server.v1_12_R1.EntityInsentient;
+import net.minecraft.server.v1_12_R1.EntitySkeleton;
+
+public class CustomZombie implements Listener {
+
+	private Plugin plugin = main.getPlugin(main.class);
+	
+	public enum CustomEntityType {
+		 
+	    ZOMBIE("Zombie", 51, EntityType.ZOMBIE, EntitySkeleton.class, CustomZombie.class),
+	 
+	    private String name;
+	    private int id;
+	    private EntityType entityType;
+	    private Class<? extends EntityInsentient> nmsClass;
+	    private Class<? extends EntityInsentient> customClass;
+	 
+	    private CustomEntityType(String name, int id, EntityType entityType, Class<? extends EntityInsentient> nmsClass, Class<? extends EntityInsentient> customClass){
+	        this.name = name;
+	        this.id = id;
+	        this.entityType = entityType;
+	        this.nmsClass = nmsClass;
+	        this.customClass = customClass;
+	    }
+	 
+	    public String getName(){
+	        return this.name;
+	    }
+	 
+	    public int getID(){
+	        return this.id;
+	    }
+	 
+	    public EntityType getEntityType(){
+	        return this.entityType;
+	    }
+	 
+	    public Class<? extends EntityInsentient> getNMSClass(){
+	        return this.nmsClass;
+	    }
+	 
+	    public Class<? extends EntityInsentient> getCustomClass(){
+	        return this.customClass;
+	    }
+	 
+	}
+	
+}

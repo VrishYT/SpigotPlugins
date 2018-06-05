@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Bedwars1o1">
+    <output-path>$PROJECT_DIR$/../../Apps/Games/Minecraft/Coding/TestServer/plugins</output-path>
+    <root id="archive" name="Bedwars1o1.jar">
+      <element id="module-output" name="Bedwars1o1" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../../Apps/Games/Minecraft/Coding/TestServer/plugins/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="file-copy" path="$PROJECT_DIR$/../thbentlage/Additional/Bedwars1o1 Sourcecode/messages.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/../thbentlage/Additional/Bedwars1o1 Sourcecode/plugin.yml" />
+    </root>
+  </artifact>
+</component>

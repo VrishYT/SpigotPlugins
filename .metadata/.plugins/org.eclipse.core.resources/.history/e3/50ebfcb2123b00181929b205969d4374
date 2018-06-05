@@ -1,0 +1,10 @@
+package com.vrish.kits;
+
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.event.Listener;
+
+import net.minecraft.server.v1_12_R1.CommandExecute;
+
+public class UKitCommand extends CommandExecute implements Listener,CommandExecutor {
+
+}

@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="MobBehaviour">
+    <output-path>$PROJECT_DIR$/../../Apps/Games/Minecraft/Coding/TestServer/plugins</output-path>
+    <root id="archive" name="MobBehaviour.jar">
+      <element id="module-output" name="FiverrEdwardbnewman" />
+      <element id="file-copy" path="$PROJECT_DIR$/FiverrEdwardbnewman/config.yml" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../../Apps/Games/Minecraft/Coding/TestServer/plugins/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="file-copy" path="$PROJECT_DIR$/FiverrEdwardbnewman/plugin.yml" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,33 @@
+#  ---------------------------------------------------------------------------
+# ¦  ___  ___      _      ______      _                 _                     ¦
+# ¦  |  \/  |     | |     | ___ \    | |               (_)                    ¦
+# ¦  | .  . | ___ | |__   | |_/ / ___| |__   __ ___   ___  ___  _   _ _ __    ¦
+# ¦  | |\/| |/ _ \| '_ \  | ___ \/ _ \ '_ \ / _` \ \ / / |/ _ \| | | | '__|   ¦
+# ¦  | |  | | (_) | |_) | | |_/ /  __/ | | | (_| |\ V /| | (_) | |_| | |      ¦
+# ¦  \_|  |_/\___/|_.__/  \____/ \___|_| |_|\__,_| \_/ |_|\___/ \__,_|_|      ¦
+# ¦                                                                           ¦
+#  ---------------------------------------------------------------------------
+# By Vrish
+#  ┣━ https://fiverr.com/vrishyt
+#  ┣━ https://youtube.com/c/vrish
+#  ┗━ https://soundcloud.com/vrishyt
+
+
+MobBehaviour:
+  Slimes:
+    king-slime-size: 6
+    #How big the King Slime is. Default = 4
+    spawn-rate: 500
+    #How often slimes will spawn. (In ticks) 20 ticks = 1 second
+    spawn-range: 32
+    #Maximum spawn range of the slimes from a player.
+    king-slime-chance: 10
+    #Percentage chance for a giant slime to spawn rather than a small slime. (out of 100) Defualt = 20% chance.
+  Creeper:
+    nausea-distance: 6
+    #How many blocks away the nausea explosion affects a player
+    creeper-griefing: 0
+    #Will creepers block up blocks. 1 = Yes, 0 = No
+  Enderman:
+    tp-distance: 5
+    #How many blocks away will endermen bring players with them on a tp

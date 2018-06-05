@@ -1,0 +1,50 @@
+package com.vrish.kits;
+
+import org.bukkit.ChatColor;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.command.ConsoleCommandSender;
+import org.bukkit.entity.Player;
+
+public class Commands implements CommandExecutor {
+
+	public static String cmd1 = "kit";
+	public static String cmd2 = "ukit";	
+	
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+
+		if (cmd.getName().equalsIgnoreCase(cmd1)) { 
+			
+			if (sender instanceof Player) {
+				
+				Player player = (Player) sender;
+				Inventories.kitInv(player);
+				
+				return true;
+				
+			}else if (sender instanceof ConsoleCommandSender) {
+				
+				ConsoleCommandSender console = (ConsoleCommandSender) sender;
+				console.sendMessage(ChatColor.RED + "This command can only be used by a player.");
+				console.sendMessage(ChatColor.RED + "Please use /ukit instead.");
+				
+				return true;
+				
+			}
+			
+			return true;
+			
+		}else if (cmd.getName().equalsIgnoreCase(cmd2)) {
+			
+			
+			
+			return true;
+			
+		}
+		
+		return false;
+	}
+
+}

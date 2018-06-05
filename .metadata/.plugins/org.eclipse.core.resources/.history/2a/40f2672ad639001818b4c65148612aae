@@ -1,0 +1,66 @@
+package com.vrish.mobs;
+
+import java.util.concurrent.ThreadLocalRandom;
+
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
+import org.bukkit.entity.Entity;
+import org.bukkit.entity.EntityType;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.entity.EntityExplodeEvent;
+import org.bukkit.event.entity.EntityTeleportEvent;
+import org.bukkit.event.player.PlayerMoveEvent;
+import org.bukkit.plugin.Plugin;
+
+public class Events implements Listener {
+
+	private Plugin plugin = main.getPlugin(main.class);
+	
+	@EventHandler
+	public void playerMove(PlayerMoveEvent move) {
+		
+		Player player = move.getPlayer();
+		Location loc = move.getTo();
+		
+		int rate = plugin.getConfig().getInt("MobBehaviour.Slimes.spawn-rate");
+		int chance = ThreadLocalRandom.current().nextInt(1, rate + 1);
+		if (chance == rate) {
+			
+			MobSpawner.spawnSlime(loc);
+			
+		}
+	}
+	
+	@EventHandler
+	public void enderTeleport(EntityTeleportEvent tp) {
+		
+		EntityType tpEntityType = tp.getEntityType();
+		Entity tpEntity = tp.getEntity();
+		if (tpEntityType == EntityType.ENDERMAN) {
+			
+			for (Player player : Bukkit.getOnlinePlayers()) {
+				  if (player.getLocation().distance(tp.getFrom()) <= 10) {
+				    
+					  player.teleport(tp.getTo());
+					  
+				  }
+				}
+			
+		}
+		
+	}
+	
+	@EventHandler
+	public void onCreeperExplode(EntityExplodeEvent explode) {
+		
+		if (explode.getEntityType() == EntityType.CREEPER) {
+			
+			
+			
+		}
+		
+	}
+	
+}

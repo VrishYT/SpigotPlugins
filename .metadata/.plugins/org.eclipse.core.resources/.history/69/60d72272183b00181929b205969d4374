@@ -1,0 +1,60 @@
+package com.vrish.kitsplus;
+
+import org.bukkit.ChatColor;
+import org.bukkit.Material;
+import org.bukkit.entity.Player;
+import org.bukkit.event.Listener;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.plugin.Plugin;
+
+
+public class Inventories implements Listener {
+
+	private Plugin plugin = main.getPlugin(main.class);
+	
+	public void kitInv(Player player) {
+		
+		Inventory i = plugin.getServer().createInventory(null, 54, ChatColor.GOLD + "KitsPlus");
+		
+		
+		
+		player.openInventory(i);
+		
+	}
+	
+	public void ukitInv(Player player) {
+		
+		Inventory i = plugin.getServer().createInventory(null, 27, "§6KitsPlus: §cAdmin ");
+		
+		ItemStack view = new ItemStack(Material.IRON_BLOCK,1);
+		ItemMeta mview = view.getItemMeta();
+		mview.setDisplayName("§dView Kits");
+		view.setItemMeta(mview);
+		
+		ItemStack create = new ItemStack(Material.GOLD_BLOCK, 1);
+		ItemMeta mcreate = create.getItemMeta();
+		mcreate.setDisplayName("§6Create Kit");
+		create.setItemMeta(mcreate);
+		
+		ItemStack edit = new ItemStack(Material.DIAMOND_BLOCK, 1);
+		ItemMeta medit = edit.getItemMeta();
+		medit.setDisplayName("§bEdit Kits");
+		edit.setItemMeta(medit);
+		
+		ItemStack delete = new ItemStack(Material.REDSTONE_BLOCK, 1);
+		ItemMeta mdel = delete.getItemMeta();
+		mdel.setDisplayName("§cDelete Kits");
+		delete.setItemMeta(mdel);
+		
+		i.setItem(10, view);
+		i.setItem(12, create);
+		i.setItem(14, edit);
+		i.setItem(16, delete);
+		
+		player.openInventory(i);
+		
+	}
+	
+}

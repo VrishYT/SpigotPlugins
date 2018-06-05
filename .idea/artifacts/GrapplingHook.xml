@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="GrapplingHook">
+    <output-path>$PROJECT_DIR$/../TestServer/plugins</output-path>
+    <root id="archive" name="GrapplingHook.jar">
+      <element id="module-output" name="GrapplingHook" />
+      <element id="file-copy" path="$PROJECT_DIR$/GrapplingHook/plugin.yml" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/GrapplingHook/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.bukkit.plugin.java.JavaPlugin"/>
+<fullyQualifiedTypeName name="com.vrish.kits.Commands"/>
+<fullyQualifiedTypeName name="net.minecraft.server.v1_8_R3.CommandExecute"/>
+<fullyQualifiedTypeName name="org.bukkit.event.player.PlayerInteractEvent"/>
+<fullyQualifiedTypeName name="org.bukkit.event.EventHandler"/>
+<fullyQualifiedTypeName name="org.bukkit.event.block.Action"/>
+<fullyQualifiedTypeName name="org.bukkit.event.entity.EntityTeleportEvent"/>
+<fullyQualifiedTypeName name="org.bukkit.entity.Entity"/>
+<fullyQualifiedTypeName name="org.bukkit.event.entity.EntityExplodeEvent"/>
+<fullyQualifiedTypeName name="net.md_5.bungee.api.ChatColor"/>
+<fullyQualifiedTypeName name="org.bukkit.entity.Player"/>
+<fullyQualifiedTypeName name="net.minecraft.server.v1_12_R1.BlockAir"/>
+<fullyQualifiedTypeName name="org.bukkit.potion.PotionEffect"/>
+<fullyQualifiedTypeName name="org.bukkit.potion.PotionEffectType"/>
+<fullyQualifiedTypeName name="java.awt.TextComponent"/>
+<fullyQualifiedTypeName name="net.md_5.bungee.api.chat.TextComponent"/>
+<fullyQualifiedTypeName name="net.md_5.bungee.api.ChatMessageType"/>
+<fullyQualifiedTypeName name="io.github.theluca98.textapi.ActionBar"/>
+<fullyQualifiedTypeName name="org.bukkit.inventory.Inventory"/>
+<fullyQualifiedTypeName name="org.bukkit.command.ConsoleCommandSender"/>
+<fullyQualifiedTypeName name="org.bukkit.ChatColor"/>
+<fullyQualifiedTypeName name="com.vrish.kits.Inventories"/>
+<fullyQualifiedTypeName name="net.minecraft.server.v1_12_R1.CommandExecute"/>
+<fullyQualifiedTypeName name="org.bukkit.command.CommandExecutor"/>
+<fullyQualifiedTypeName name="org.bukkit.event.inventory.InventoryClickEvent"/>
+<fullyQualifiedTypeName name="net.minecraft.server.v1_12_R1.ItemStack"/>
+<fullyQualifiedTypeName name="net.minecraft.server.v1_12_R1.Item"/>
+<fullyQualifiedTypeName name="org.bukkit.inventory.meta.ItemMeta"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.vrish.kitsplus.Inventories"/>
+<fullyQualifiedTypeName name="org.bukkit.inventory.ItemStack"/>
+<fullyQualifiedTypeName name="org.bukkit.Material"/>
+<fullyQualifiedTypeName name="org.bukkit.Bukkit"/>
+<fullyQualifiedTypeName name="org.bukkit.scheduler.BukkitRunnable"/>
+<fullyQualifiedTypeName name="org.bukkit.Location"/>
+<fullyQualifiedTypeName name="org.bukkit.event.Listener"/>
+<fullyQualifiedTypeName name="org.bukkit.plugin.Plugin"/>
+<fullyQualifiedTypeName name="net.minecraft.server.v1_12_R1.EntityZombie"/>
+</qualifiedTypeNameHistroy>

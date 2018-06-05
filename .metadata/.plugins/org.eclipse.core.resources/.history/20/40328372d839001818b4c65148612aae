@@ -1,0 +1,22 @@
+ name: MobBehviour
+ version: 1
+ description: This plugin will alter some Mob Behaviour
+ author: Vrish
+ authors: [Vrish] 
+ 
+ main: com.vrish.mobs.main
+ 
+ commands:
+   flagrate:
+     description: Set yourself on fire.
+     aliases: [combust_me, combustMe]
+     permission: inferno.flagrate
+     usage: Syntax error! Simply type /&lt;command&gt; to ignite yourself.
+   burningdeaths:
+     description: List how many times you have died by fire.
+     aliases: [burning_deaths, burningDeaths]
+     permission: inferno.burningdeaths
+     usage: |
+       /&lt;command&gt; [player]
+       Example: /&lt;command&gt; - see how many times you have burned to death
+       Example: /&lt;command&gt; CaptainIce - see how many times CaptainIce has burned to death

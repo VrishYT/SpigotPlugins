@@ -1,0 +1,6 @@
+ name: MobBehaviour
+ version: 1
+ description: Alters the Mob Behaviour of Creepers, Enderman and changes Slime Spawns.
+ author: Vrish
+ authors: [Vrish]
+ main: com.vrish.mobs.Main

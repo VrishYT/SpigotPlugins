@@ -1,0 +1,6 @@
+ name: CustomKitAndPvP
+ version: 1
+ description: Custom Kit plugin and PvP toggle.
+ author: Vrish
+ authors: [Vrish]
+ main: com.vrish.main.main

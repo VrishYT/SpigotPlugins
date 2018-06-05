@@ -1,0 +1,70 @@
+package com.vrish.mobs;
+
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
+import org.bukkit.Location;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+
+public class Commands implements CommandExecutor {
+
+	String cmd1 = "slime";
+	String ssub1 = "spawn";
+
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+
+		if (cmd.getName().equalsIgnoreCase(cmd1)) {
+			
+			if (args.length >= 1) {
+			
+				if (args[0].equalsIgnoreCase(ssub1)) {
+					
+					if (sender instanceof Player) {
+						
+						Player player = (Player) sender;
+						Location loc = player.getLocation();
+						MobSpawner.spawnSlime(loc);
+						
+					}else {
+						
+						if (args.length > 1) {
+							
+							String name = args[1];
+							Player player = Bukkit.getPlayer(name);
+							Location loc = player.getLocation();
+							MobSpawner.spawnSlime(loc);
+							
+						}else {
+							
+							sender.sendMessage("Incorrect usage. Please do /slime help");
+							
+						}
+						
+					}
+					
+				}
+			}else if (args.length == 0) {
+				
+				if (sender instanceof Player) {
+					
+					Player player = (Player) sender;
+					player.sendMessage(ChatColor.DARK_RED + "Incorrect usage. Please do /slime help");
+					
+				}else {
+					
+					sender.sendMessage("Incorrect usage. Please do /slime help");
+					
+				}
+								
+			}
+			
+		}
+		
+		
+		return false;
+	}
+
+}

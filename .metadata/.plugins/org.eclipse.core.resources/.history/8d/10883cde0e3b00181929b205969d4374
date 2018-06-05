@@ -1,0 +1,22 @@
+ name: Kits+
+ version: 1.0
+ description: Kits Plugin with a kit openable.
+ author: Vrish
+ authors: [Vrish] 
+ 
+ main: com.vrish.kits.main
+ 
+ commands:
+   kit:
+     description: Main kit command.
+     aliases: [mobslime]
+     permission: mobs.slime
+     
+ permissions:
+   mobs.*:
+     description: Gives access to all Mob Behaviour commands
+     children:
+       mobs.slime: true
+   mobs.slime:
+     description: Allows you to use the /slime command.
+     default: false

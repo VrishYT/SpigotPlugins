@@ -1,0 +1,35 @@
+package com.vrish.mobs;
+
+import org.bukkit.Location;
+import org.bukkit.World;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerMoveEvent;
+import org.bukkit.plugin.Plugin;
+
+import com.vrish.mobs.main;
+
+public class Events implements Listener {
+
+	private Plugin plugin = main.getPlugin(main.class);
+	
+	@EventHandler
+	public void playerMove(PlayerMoveEvent move) {
+		
+		Player player = move.getPlayer();
+		Location loc = move.getTo();
+		
+		player.getServer().getScheduler().scheduleSyncRepeatingTask(plugin, new Runnable(){
+			@@Override
+			public void run() {
+
+			    Player player = Bukkit.getPlayer(name);
+			    // Do stuff
+
+			}
+			}, 0, 0);
+		
+	}
+	
+}
